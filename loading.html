@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Loader</title>
+    <style>
+        :root {
+            --size: 200px;
+            --ring-width: 8px;
+            --fill-color: #00d4ff; /* primary liquid */
+            --wave-color: #300dad; /* secondary wave */
+            --ring-gradient: conic-gradient(
+    from 0deg,
+    #00d4ff,   /* bright cyan */
+    #6a0dad,   /* deep violet */
+    #00ffb3,   /* neon green */
+    #ffd700    /* gold highlight */
+);
+            --fill-gradient: linear-gradient(205deg, #00d4ff, #300dad, #ff5c8a);
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #e0e0e0;
+            overflow: hidden;
+        }
+
+        .loader {
+            position: relative;
+            width: var(--size);
+            height: var(--size);
+            border-radius: 50%;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Animated ring */
+        .ring {
+            position: absolute;
+            inset: 1px;
+            border-radius: 50%;
+            background: var(--ring-gradient);
+            -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - var(--ring-width)), #000 0);
+            mask: radial-gradient(farthest-side, transparent calc(100% - var(--ring-width)), #000 0);
+            animation: spin 3s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Core container */
+        .core {
+            position: absolute;
+            inset: var(--ring-width);
+            border-radius: 95%;
+            overflow: hidden;
+            box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        /* Liquid fill animation */
+        .fill {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 0%;
+            background: var(--fill-gradient);
+            opacity: 0.85;
+            animation: liquid-charge 3s cubic-bezier(0.4, 0, 0.6, 1) infinite alternate;
+            border-radius: 0 0 50% 50%;
+        }
+
+        @keyframes liquid-charge {
+            0% { height: 0%; }
+            100% { height: 100%; }
+        }
+
+        /* Waves */
+        .wave {
+            position: absolute;
+            top: -50px;
+            left: 0;
+            width: 200%;
+            height: 50px;
+            border-radius: 50% 50% 0 0;
+            animation: liquid-wave 6s linear infinite, bobbing 3s ease-in-out infinite alternate;
+        }
+
+        .wave:nth-of-type(1) {
+            background-color: var(--wave-color);
+            opacity: 0.5;
+        }
+
+        .wave:nth-of-type(2) {
+            background-color: var(--fill-color);
+            opacity: 0.7;
+            top: -15px;
+            animation-duration: 3s;
+        }
+
+        @keyframes liquid-wave {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+
+        @keyframes bobbing {
+            from { transform: translateY(0); }
+            to { transform: translateY(5px); }
+        }
+
+        /* Center logo */
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120px;
+            height: auto;
+            z-index: 2;
+        }
+
+        .logo img {
+            width: 120px;
+            height: auto;
+            display: block;
+            filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader">
+        <div class="ring"></div>
+        <div class="core">
+            <div class="fill">
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+        </div>
+        <div class="logo" role="img" aria-label="Tracewatt logo">
+            <img src="assets/img/solar/tw.svg" alt="Tracewatt Logo" />
+        </div>
+    </div>
+</body>
+
+</html>

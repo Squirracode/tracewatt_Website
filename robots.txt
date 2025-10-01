@@ -1,0 +1,25 @@
+# ===========================
+# Tracewatt Robots.txt
+# World-class SEO Friendly
+# ===========================
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+Allow: /
+
+# ✅ Allow media (images, JS, CSS) so Google can render pages fully
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.svg$
+Allow: /*.gif$
+Allow: /*.webp$
+
+# ✅ Crawl-delay not set (fast indexing). If server load issues, add: Crawl-delay: 10
+
+# ✅ Sitemap for better indexing
+Sitemap: https://www.tracewatt.com/sitemap.xml

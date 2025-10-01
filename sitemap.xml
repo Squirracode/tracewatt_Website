@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.tracewatt.com/</loc>
+    <lastmod>2025-08-29</lastmod>
+    <priority>1.00</priority>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://www.tracewatt.com/assets/img/solar/Tracewatt.png</image:loc>
+      <image:title>Tracewatt Logo</image:title>
+      <image:caption>Tracewatt - AI-Powered Solar Monitoring & Asset Management</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.tracewatt.com/assets/img/solar/cover.jpeg</image:loc>
+      <image:title>Tracewatt Solar Monitoring</image:title>
+      <image:caption>Smart Solar Plant Monitoring, O&amp;M &amp; Asset Management</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Us -->
+  <url>
+    <loc>https://www.tracewatt.com/about.html</loc>
+    <lastmod>2025-08-29</lastmod>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://www.tracewatt.com/assets/img/solar/cover.jpeg</image:loc>
+      <image:title>About Tracewatt</image:title>
+      <image:caption>Learn more about Tracewatt's AI-powered solar solutions</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Devices / Products -->
+  <url>
+    <loc>https://www.tracewatt.com/devices.html</loc>
+    <lastmod>2025-08-29</lastmod>
+    <priority>0.85</priority>
+    <changefreq>weekly</changefreq>
+    <image:image>
+      <image:loc>https://www.tracewatt.com/assets/img/solar/Tracewatt.png</image:loc>
+      <image:title>Tracewatt Devices</image:title>
+      <image:caption>Monitoring devices, inverters, meters, and sensors</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://www.tracewatt.com/contact.html</loc>
+    <lastmod>2025-08-29</lastmod>
+    <priority>0.70</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://www.tracewatt.com/privacy-policy.html</loc>
+    <lastmod>2025-08-29</lastmod>
+    <priority>0.50</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- Terms and Conditions -->
+  <url>
+    <loc>https://www.tracewatt.com/terms-and-conditions.html</loc>
+    <lastmod>2025-08-29</lastmod>
+    <priority>0.50</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+</urlset>
