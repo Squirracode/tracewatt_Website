@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <!-- Homepage -->
   <url>
     <loc>https://www.tracewatt.com/</loc>
-    <lastmod>2025-08-29</lastmod>
+    <lastmod>2025-10-03</lastmod>
     <priority>1.00</priority>
     <changefreq>daily</changefreq>
     <image:image>
@@ -23,7 +24,7 @@
   <!-- About Us -->
   <url>
     <loc>https://www.tracewatt.com/about.html</loc>
-    <lastmod>2025-08-29</lastmod>
+    <lastmod>2025-10-03</lastmod>
     <priority>0.85</priority>
     <changefreq>monthly</changefreq>
     <image:image>
@@ -36,7 +37,7 @@
   <!-- Devices / Products -->
   <url>
     <loc>https://www.tracewatt.com/devices.html</loc>
-    <lastmod>2025-08-29</lastmod>
+    <lastmod>2025-10-03</lastmod>
     <priority>0.85</priority>
     <changefreq>weekly</changefreq>
     <image:image>
@@ -46,10 +47,23 @@
     </image:image>
   </url>
 
+  <!-- Company Profile -->
+  <url>
+    <loc>https://www.tracewatt.com/company_profile.html</loc>
+    <lastmod>2025-10-03</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://www.tracewatt.com/assets/img/solar/cover.jpeg</image:loc>
+      <image:title>Tracewatt Company Profile</image:title>
+      <image:caption>Explore Tracewatt’s company profile and expertise in solar monitoring</image:caption>
+    </image:image>
+  </url>
+
   <!-- Contact Page -->
   <url>
     <loc>https://www.tracewatt.com/contact.html</loc>
-    <lastmod>2025-08-29</lastmod>
+    <lastmod>2025-10-03</lastmod>
     <priority>0.70</priority>
     <changefreq>yearly</changefreq>
   </url>
@@ -57,7 +71,7 @@
   <!-- Privacy Policy -->
   <url>
     <loc>https://www.tracewatt.com/privacy-policy.html</loc>
-    <lastmod>2025-08-29</lastmod>
+    <lastmod>2025-10-03</lastmod>
     <priority>0.50</priority>
     <changefreq>yearly</changefreq>
   </url>
@@ -65,9 +79,10 @@
   <!-- Terms and Conditions -->
   <url>
     <loc>https://www.tracewatt.com/terms-and-conditions.html</loc>
-    <lastmod>2025-08-29</lastmod>
+    <lastmod>2025-10-03</lastmod>
     <priority>0.50</priority>
     <changefreq>yearly</changefreq>
   </url>
 
 </urlset>
+
